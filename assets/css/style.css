@@ -1,3 +1,131 @@
 * {
-    background-color: crimson;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+header {
+    padding: 7px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #1c6e8c;
+    background-color: #95829F;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #95829F;
+}
+
+nav a {
+    float: right;
+    color: #E8EBE4;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+main section {
+    position: relative;
+    text-align: center;
+    color: #1c6e8c;
+}
+
+aside {
+}
+
+h2 {
+    text-align: left;
+    flex-basis: auto;
+    align-self: flex-start;
+}
+
+footer {
+    background-color: #95829F;
+    text-align: center;
+    border-radius: 0;
+    color: #1c6e8c;
+}
+
+.banner-image {
+    width: 100%;
+    max-height: 100px;
+}
+
+.About-1 {
+    order: 1;
+}
+
+.Projects-2 {
+    order: 2;
+}
+
+.Contact-3 {
+    order: 3;
+}
+
+.Project {
+    align-self: auto;
+
+}
+
+.Project h3 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    border: none;
+    margin: 0;
+    padding: 14px 16px;
+    color: #E8EBE4;
+    outline: none;
+    font-size: 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+nav a:hover,
+.dropdown:hover .dropbutton {
+    background-color: #B084CC;
+}
+
+.dropdown-projects {
+    display: none;
+    position: absolute;
+    color: #B084CC;
+    background-color: #B084CC;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(163, 7, 165, 0.643);
+}
+
+.dropdown-projects a:hover {
+    background-color: #B084CC;
+}
+
+.dropdown:hover .dropdown-projects {
+    display: block;
 }
